@@ -234,10 +234,10 @@ y_val = np.concatenate((y_val, augmented_y_val), axis=0)
 
 print(X_train.shape)
 print(X_val.shape)
-#np.save('X_val3.npy', X_val)
+#np.save('X_val.npy', X_val)
 print(y_train.shape)
 print(y_val.shape)
-#np.save('y_val3.npy', y_val)
+#np.save('y_val.npy', y_val)
 
 # training pipeline
 new_unet = get_model(img_size=(128, 128), bands=7)
